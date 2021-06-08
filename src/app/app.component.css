@@ -1,0 +1,14 @@
+.fondo{
+  background-image: url('src/assets/img/hackerWeb-02.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo{
+  height: 80px;
+  background-image: url('src/assets/img/hackerWeb-03.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

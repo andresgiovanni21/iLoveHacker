@@ -6,9 +6,34 @@
 }
 
 .logo{
-  height: 80px;
+  z-index: 10;
+  height: 55px;
+  margin-top: 15px;
   background-image: url('src/assets/img/hackerWeb-03.png');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.hackerPic{
+  height: 202px;
+  margin-top: -20px;
+  background-image: url('src/assets/img/hackerWeb-04.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pantallaExt{
+  background-image: linear-gradient(to right, #058DB7, #084981);
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 160px;
+}
+
+.pantallaInt{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: black;
+  min-height: 510px;
 }

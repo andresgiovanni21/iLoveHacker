@@ -1,7 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 
+html, body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
 p {
   font-family: "Share Tech Mono";
   color: white;
   font-size: 18px;
+  text-align: center;
+}
+
+a{
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.boton{
+  font-family: "Share Tech Mono";
+  font-size: 22px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 45px;
+  padding-top: 5px;
+  padding-right: 45px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.inputPer{
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  border-bottom-style: solid;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-right: 25px;
+  background-color: transparent;
 }

@@ -6,18 +6,30 @@
   <div class="row">
     <div class="col hackerPic"></div>
   </div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-4">
-      <div class="pantallaExt">
-        <div class="pantallaInt">
-          <app-intro1></app-intro1>
-          <app-intro2></app-intro2>
-          <app-intro3></app-intro3>
-          <app-intro1></app-intro1>
-          <app-intro1></app-intro1>
-          <app-intro1></app-intro1>
+  <div class="row justify-content-center">
+    <div class="col-11 col-xxl-5 col-lg-6 col-md-8">
+      <div class="pantallaExt position-relative">
+        <div [ngSwitch]="s_exp" class="pantallaInt position-relative d-flex">
+          <app-intro1 class="flex-fill" *ngSwitchCase="1"></app-intro1>
+          <app-intro2 class="flex-fill" *ngSwitchCase="2"></app-intro2>
+          <app-intro3 class="flex-fill" *ngSwitchCase="3"></app-intro3>
+          <app-malware class="flex-fill" *ngSwitchCase="4"></app-malware>
+          <app-pass class="flex-fill" *ngSwitchCase="5"></app-pass>
+          <app-tarjeta class="flex-fill" *ngSwitchCase="6"></app-tarjeta>
+        </div>
+        <div class="tarjeta">
+          <app-creditcard></app-creditcard>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="container-fluid negro">
+  <div class="row">
+    <div class="col-md-7 col-12 p-5">
+      <p class="text-center">iLoveHacker.com es una aplicación web creada para simular actividades relacionadas con los hackers. Ninguno de los datos son reales.
+        Esta es una página de broma con fines académicos.<br><br>UNIR - 2021</p>
+    </div>
+    <div class="col-md-5 col-12 imagenH"></div>
   </div>
 </div>

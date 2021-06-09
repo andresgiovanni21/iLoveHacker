@@ -8,6 +8,7 @@ import { Intro3Component } from './intro3/intro3.component';
 import { MalwareComponent } from './malware/malware.component';
 import { PassComponent } from './pass/pass.component';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { CreditcardComponent } from './creditcard/creditcard.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component';
     Intro3Component,
     MalwareComponent,
     PassComponent,
-    TarjetaComponent
+    TarjetaComponent,
+    CreditcardComponent
   ],
   imports: [
     BrowserModule

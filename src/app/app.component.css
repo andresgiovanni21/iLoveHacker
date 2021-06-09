@@ -3,6 +3,8 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 .logo{
@@ -26,14 +28,35 @@
 
 .pantallaExt{
   background-image: linear-gradient(to right, #058DB7, #084981);
-  padding: 15px;
+  padding: 20px;
   border-radius: 25px;
-  margin-bottom: 160px;
+  margin-top: -2px;
 }
 
 .pantallaInt{
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   background-color: black;
   min-height: 510px;
+}
+
+.negro{
+  background-color: black;
+  padding-top: 40px;
+}
+
+.imagenH{
+   background-image: url('src/assets/img/hackerWeb-05.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tarjeta{
+  width: 90%;
+  height: 3px;
+  position: absolute;
+  bottom: 8px;
+  background-color: black;
+  margin-left: 2.5%;
 }

@@ -1,0 +1,8 @@
+.imagen1{
+  height: 100px;
+  margin-top: -20px;
+  background-image: url('src/assets/img/hackerWeb-07.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

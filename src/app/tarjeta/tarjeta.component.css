@@ -1,0 +1,14 @@
+.ima1{
+  background-image: url('src/assets/img/hackerWeb-08.png');
+  background-position: 50% 50%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+  width: 152px;
+}
+.ima2{
+  background-image: url('src/assets/img/hackerWeb-09.png');
+  background-position: 50% 50%;
+  background-size: 130px;
+  background-repeat: no-repeat;
+  width: 152px;
+}

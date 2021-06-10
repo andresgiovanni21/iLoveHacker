@@ -1,0 +1,12 @@
+@keyframes parpadeo {
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.hidden {
+  display: none;
+}
+
+.parpadeo {
+  animation: parpadeo 0.8s steps(1, start) infinite alternate;
+}

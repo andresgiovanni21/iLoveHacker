@@ -1,17 +1,17 @@
 <div class="content-fluid h-100 d-flex">
   <div class="row w-100 h-100 flex-fill">
     <div class="d-flex flex-column align-items-center">
-      <div class="h-100 w-100 d-flex flex-column p-5 pt-0">
-        <div class="imagen1"></div>
-        <p class="mt-5 fs-4">Introduce el correo</p>
-        <input class="inputPer" type="email" placeholder="email">
+
+      <div class="h-100 w-100 d-flex flex-column justify-content-center">
+        <p class="fs-1 password" *ngIf="ocultar"></p>
+        <p class="" *ngIf="ocultar">Presiona cualquier tecla para hackear</p>
+        <p class="fs-4 acceso hidden parpadeo">Acceso correcto</p>
       </div>
-      <div class="h-100 w-100 d-flex flex-column ">
-        <p class="fs-1">ADMIN2015</p>
-        <p class="fs-4">Acceso correcto</p>
-      </div>
-      <button class="boton">
+      <button class="boton" (click)="empezar()" *ngIf="ocultar2">
         Desencriptar
+      </button>
+      <button class="boton volver" [hidden]="ocultar2" (click)="clicBot()">
+        Volver
       </button>
     </div>
   </div>

@@ -10,9 +10,9 @@
     <div class="col-11 col-xxl-5 col-lg-6 col-md-8">
       <div class="pantallaExt position-relative">
         <div [ngSwitch]="s_exp" class="pantallaInt position-relative d-flex">
-          <app-intro1 class="flex-fill" *ngSwitchCase="1"></app-intro1>
-          <app-intro2 class="flex-fill" *ngSwitchCase="2"></app-intro2>
-          <app-intro3 class="flex-fill" *ngSwitchCase="3"></app-intro3>
+          <app-intro1 class="flex-fill" *ngSwitchCase="1" (envInfo)="recInfo($event)"></app-intro1>
+          <app-intro2 class="flex-fill" *ngSwitchCase="2" (envInfo)="recInfo2($event)" [nombreUser]="nombre"></app-intro2>
+          <app-intro3 class="flex-fill" *ngSwitchCase="3" (envInfo)="recInfo2($event)" [nombreUser]="nombre"></app-intro3>
           <app-malware class="flex-fill" *ngSwitchCase="4"></app-malware>
           <app-pass class="flex-fill" *ngSwitchCase="5"></app-pass>
           <app-tarjeta class="flex-fill" *ngSwitchCase="6"></app-tarjeta>

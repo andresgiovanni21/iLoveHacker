@@ -2,9 +2,9 @@
   <div class="row w-100 h-100 flex-fill">
     <div class="d-flex flex-column align-items-center">
       <div class="h-100 w-100 d-flex flex-column pt-5">
-        <p class="fs-4">¿Nombre, hoy qué te apetece?<br></p>
+        <p class="fs-4">¿{{nombreUser}}, hoy qué te apetece?<br></p>
         <div class="row h-100">
-          <a class="col d-flex flex-column justify-content-center align-items-center" style="color: #F9AE3B">
+          <a class="col d-flex flex-column justify-content-center align-items-center" (click)="clicBot1()" style="color: #F9AE3B">
             <svg style="height: 80px; margin-bottom: 15px" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512">
@@ -37,7 +37,7 @@
             </svg>
             Hacer un malware
           </a>
-          <a class="col d-flex flex-column justify-content-center align-items-center" style="color: #00FFFF">
+          <a class="col d-flex flex-column justify-content-center align-items-center" (click)="clicBot2()" style="color: #00FFFF">
             <svg style="height: 80px; margin-bottom: 15px" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512">
@@ -72,7 +72,7 @@
             </svg>
             Desbloquear contraseña
           </a>
-          <a class="col d-flex flex-column justify-content-center align-items-center" style="color: #22B373">
+          <a class="col d-flex flex-column justify-content-center align-items-center" (click)="clicBot3()" style="color: #22B373">
             <svg style="height: 80px; margin-bottom: 15px" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 512 512">

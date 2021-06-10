@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('src/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
+
 html, body {
   min-height: 100vh;
   height: auto;
@@ -7,7 +14,7 @@ html, body {
 }
 
 p {
-  font-family: "Share Tech Mono";
+  font-family: 'Share Tech Mono';
   color: white;
   font-size: 18px;
   text-align: center;
@@ -18,6 +25,7 @@ a{
   font-size: 18px;
   text-align: center;
   text-decoration: none;
+  cursor:pointer;
 }
 
 .boton{

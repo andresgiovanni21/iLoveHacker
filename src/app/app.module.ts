@@ -10,6 +10,8 @@ import { PassComponent } from './pass/pass.component';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
 
+import { FormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { CreditcardComponent } from './creditcard/creditcard.component';
     CreditcardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

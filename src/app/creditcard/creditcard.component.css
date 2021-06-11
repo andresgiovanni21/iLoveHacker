@@ -1,0 +1,13 @@
+.tarjeta {
+  transform: translateY(-150px);
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.mover {
+ transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transform: translateY(150px);
+}

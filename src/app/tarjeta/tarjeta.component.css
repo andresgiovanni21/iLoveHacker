@@ -4,11 +4,30 @@
   background-size: 130px;
   background-repeat: no-repeat;
   width: 152px;
+  opacity: 0.6;
+  background-color: transparent;
+  border-style: none;
 }
+.ima1:hover{
+  opacity: 1;
+}
+.ima1:focus{
+  opacity: 1;
+}
+
 .ima2{
   background-image: url('src/assets/img/hackerWeb-09.png');
   background-position: 50% 50%;
   background-size: 130px;
   background-repeat: no-repeat;
   width: 152px;
+  opacity: 0.6;
+  background-color: transparent;
+  border-style: none;
+}
+.ima2:hover{
+  opacity: 1;
+}
+.ima2:focus{
+  opacity: 1;
 }

@@ -46,7 +46,7 @@ export class PassComponent implements OnInit {
     $(window).on('keydown', hack);
 
     $('.volver').on('click', function (){
-      alert('funciona');
+
       indexOld = index;
       do {
         index = Math.floor((Math.random() * passwords.length));

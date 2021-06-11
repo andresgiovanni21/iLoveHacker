@@ -15,10 +15,10 @@
           <app-intro3 class="flex-fill" *ngSwitchCase="3" (envInfo)="recInfo2($event)" [nombreUser]="nombre"></app-intro3>
           <app-malware class="flex-fill" *ngSwitchCase="4" (envInfo)="recInfo2($event)"></app-malware>
           <app-pass class="flex-fill" *ngSwitchCase="5" (envInfo)="recInfo2($event)"></app-pass>
-          <app-tarjeta class="flex-fill" *ngSwitchCase="6" (envInfo)="recInfo2($event)"></app-tarjeta>
+          <app-tarjeta class="flex-fill" *ngSwitchCase="6" (envInfo)="recInfo3($event)" (envInfo2)="recInfo4($event)"></app-tarjeta>
         </div>
         <div class="tarjeta">
-          <app-creditcard></app-creditcard>
+          <app-creditcard [nombreCard]="nombreCard" [franq]="franq" [clase]="clase"></app-creditcard>
         </div>
       </div>
     </div>

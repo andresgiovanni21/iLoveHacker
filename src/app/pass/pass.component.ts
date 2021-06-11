@@ -18,15 +18,14 @@ export class PassComponent implements OnInit {
 
   ngOnInit() {
 
-    var passwords = ['perrito123', 'asdfasdf', 'admin2015', 'miclave21', 'letmein6969'];
-    var indexOld;
-    var index = Math.floor((Math.random() * passwords.length));
-    var password = passwords[index];
-    var letras = [];
-    var counter = 0;
-    var i;
+    let passwords = ['perrito123', 'asdfasdf', 'admin2015', 'miclave21', 'letmein6969'];
+    let index = Math.floor((Math.random() * passwords.length));
+    let password = passwords[index];
+    let letras = [];
+    let counter = 0;
+    let i;
 
-    var interval = setInterval(function () {
+    let interval = setInterval(function () {
       for (i = 0; i < counter; i++) {
         letras[i] = password.charAt(i);
       }
@@ -48,14 +47,6 @@ export class PassComponent implements OnInit {
     $('.volver').on('click', function (){
 
       clearInterval(interval);
-      this.indexOld = this.index;
-      do {
-        this.index = Math.floor((Math.random() * this.passwords.length));
-      } while(this.index == this.indexOld);
-
-      this.password = this.passwords[this.index];
-      this.letras = [];
-      this.counter = 0;
 
     });
   }

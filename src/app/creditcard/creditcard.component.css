@@ -1,13 +1,35 @@
 .tarjeta {
-  transform: translateY(-150px);
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
+  z-index: 1;
+  position: absolute;
+  margin-top: 185px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.plantilla{
+  height: 230.5px;
 }
 
 .mover {
- transition-property: all;
+  transition-property: all;
   transition-duration: 500ms;
   transition-timing-function: ease;
-  transform: translateY(150px);
+  padding-top: 218px;
+}
+
+.contenedorCard{
+  transform: translateY(-223px);
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  width: 370px;
+  height: 230.5px;
+
+}
+
+.imagen{
+  background-image: url('src/assets/img/hackerWeb-10.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

@@ -8,14 +8,26 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CreditcardComponent implements OnInit {
 
   @Input() nombreCard = '';
-  @Input() franq = 3;
+  @Input() franq = 2;
   @Input() clase = '';
+
+  source = '';
 
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
   }
 
+ngOnChanges(){
+
+  if(this.franq == 1){
+    this.source = '../../assets/img/hackerWeb-10.png';
+  } else if(this.franq == 2){
+    this.source = '../../assets/img/hackerWeb-11.png';
+  }
+
+}
 
 }

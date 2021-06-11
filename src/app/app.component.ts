@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import {Info} from "./core/models/info";
 import {Card} from "./core/models/card";
 
@@ -12,7 +12,7 @@ export class AppComponent {
   s_exp = 1;
   nombre = '';
   nombreCard = '';
-  franq = 3;
+  franq = 1;
   clase = '';
 
   recInfo(info: Info) {

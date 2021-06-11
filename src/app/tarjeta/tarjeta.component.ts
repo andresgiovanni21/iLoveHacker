@@ -15,7 +15,7 @@ export class TarjetaComponent implements OnInit {
   info: Info = {nombre: '', numero: 1};
   card: Card = {nombre: '', franquicia: 3, clase: 'mover'};
   ocultar = false;
-
+  ocultar2 = true;
   franq(num) {
     this.card.franquicia = num;
   }
@@ -27,6 +27,7 @@ export class TarjetaComponent implements OnInit {
   }
 
   mostrar = () => this.ocultar = !this.ocultar;
+  mostrar2 = () => this.ocultar2 = !this.ocultar2;
 
   clicBot() {
     if (this.card.nombre == '') {
@@ -36,6 +37,7 @@ export class TarjetaComponent implements OnInit {
     } else {
       this.envInfo.emit(this.card)
       this.mostrar();
+    this.mostrar2();
     }
   }
 

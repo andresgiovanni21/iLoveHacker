@@ -1,21 +1,22 @@
 <div class="content-fluid h-100 d-flex">
   <div class="row w-100 h-100 flex-fill">
     <div class="d-flex flex-column align-items-center">
-      <div class="h-100 w-100 d-flex flex-column p-4">
-        <p class="fs-4">Selecciona la franquicia<br></p>
-        <div class="row h-100">
-          <button class="col ima1 h-100" style="color: #F9AE3B" (click)="franq(0)">
-          </button>
-          <button class="col ima2 h-100" style="color: #00FFFF" (click)="franq(1)">
-          </button>
-        </div>
-      </div>
-      <div class="h-100 w-100 d-flex flex-column p-5 pt-0">
-        <div class="imagen1"></div>
+      <div class="h-100 w-100 d-flex flex-column p-5 pt-0" *ngIf="ocultar2">
+        <div class="imagen1" ></div>
         <p class="mt-5 fs-4">Dueño de la tarjeta</p>
         <input class="inputPer" type="text" placeholder="Introduce el nombre" [(ngModel)]="card.nombre">
       </div>
-      <button class="boton" (click)="clicBot()">
+      <div class="h-100 w-100 d-flex flex-column p-4">
+        <p class="fs-4" *ngIf="ocultar2">Selecciona la franquicia<br></p>
+        <p class="fs-4" *ngIf="ocultar">Ahí tienes. Rápido a hacer compritas.<br></p>
+        <div class="row h-100" *ngIf="ocultar2">
+          <button class="col ima1 h-100" style="color: #F9AE3B" (click)="franq(1)">
+          </button>
+          <button class="col ima2 h-100" style="color: #00FFFF" (click)="franq(2)">
+          </button>
+        </div>
+      </div>
+      <button class="boton" (click)="clicBot()" *ngIf="ocultar2">
         Crear
       </button>
       <button class="boton" (click)="clicBot2()" *ngIf="ocultar">

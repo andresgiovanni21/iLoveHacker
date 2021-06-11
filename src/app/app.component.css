@@ -53,10 +53,9 @@
 }
 
 .tarjeta{
-  width: 90%;
+  width: 400px;
   height: 3px;
   position: absolute;
   bottom: 8px;
   background-color: black;
-  margin-left: 2.5%;
 }

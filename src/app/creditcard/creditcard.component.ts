@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {CardService} from "../card.service";
+
 
 @Component({
   selector: 'app-creditcard',
@@ -7,26 +9,17 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CreditcardComponent implements OnInit {
 
-  @Input() nombreCard = '';
-  @Input() franq = 2;
-  @Input() clase = '';
-
-  source = '';
 
 
-  constructor() { }
+
+
+  constructor(public obtener:CardService) { }
 
   ngOnInit() {
-
   }
 
 ngOnChanges(){
 
-  if(this.franq == 1){
-    this.source = '../../assets/img/hackerWeb-10.png';
-  } else if(this.franq == 2){
-    this.source = '../../assets/img/hackerWeb-11.png';
-  }
 
 }
 

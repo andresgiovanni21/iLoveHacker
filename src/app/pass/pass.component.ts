@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import $ from 'jquery';
 
 @Component({
@@ -10,11 +10,10 @@ export class PassComponent implements OnInit {
 
   constructor() {
   }
-  correo = '';
-  numero = 1;
+
   ocultar = false;
   ocultar2 = true;
-  @Output() envInfo = new EventEmitter<number>();
+
 
   ngOnInit() {
 
@@ -65,7 +64,7 @@ export class PassComponent implements OnInit {
   clicBot(){
     this.mostrar();
     this.mostrar2();
-      this.envInfo.emit(this.numero)
+
 
   }
 }
